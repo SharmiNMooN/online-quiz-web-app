@@ -2,6 +2,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./App.css";
 import Home from "./components/Home/Home";
 import Main from "./layouts/Main";
+import { quizListLoader } from "./loader/quizListLoader";
 
 function App() {
   const router = createBrowserRouter([
@@ -11,6 +12,7 @@ function App() {
       children: [
         {
           path: "/",
+          loader: quizListLoader,
           element: <Home></Home>,
         },
       ],
