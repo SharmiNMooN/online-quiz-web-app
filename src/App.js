@@ -1,7 +1,20 @@
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./App.css";
+import Main from "./layouts/Main";
 
 function App() {
-  return <div className="App"></div>;
+  const router = createBrowserRouter([
+    {
+      path: "/",
+      element: <Main></Main>,
+      children: [],
+    },
+  ]);
+  return (
+    <div>
+      <RouterProvider router={router}></RouterProvider>
+    </div>
+  );
 }
 
 export default App;
