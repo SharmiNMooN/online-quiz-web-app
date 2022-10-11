@@ -8,7 +8,7 @@ const QuizDetails = () => {
   console.log({ id, quiz });
   return (
     <div className="container">
-      <div className="card text-center">
+      <div className="card text-center mt-2">
         <div className="card-header text-dark">
           <h5>QUIZ OF {quiz.name.toUpperCase()}</h5>
         </div>

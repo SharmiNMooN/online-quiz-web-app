@@ -22,8 +22,6 @@ const Statistics = () => {
     <div className="d-flex justify-content-center">
       <ResponsiveContainer width="40%" height="40%" aspect={1}>
         <ComposedChart
-          width={500}
-          height={400}
           data={data}
           margin={{
             top: 20,

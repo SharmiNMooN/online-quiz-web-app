@@ -13,10 +13,12 @@ const Slider = () => {
         >
           <div className="carousel-inner">
             <div className="carousel-item active">
-              <img src={slider} className="d-block w-100" alt="..." />
-              <div className="carousel-caption d-none d-md-block mb-5 ">
-                <h1>Let's Play The</h1>
-                <h3>Test your skills and become a master.</h3>
+              <img src={slider} className="d-block w-100" alt="slider" />
+              <div className="carousel-caption mb-md-5">
+                <h1 className="	d-none d-sm-block">Let's Play The</h1>
+                <h3 className="	d-none d-sm-block">
+                  Test your skills and become a master.
+                </h3>
                 <p>We organize quizzes on various topics.</p>
               </div>
             </div>
