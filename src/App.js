@@ -3,6 +3,7 @@ import "./App.css";
 import Home from "./components/Home/Home";
 import QuizDetails from "./components/QuizDetails/QuizDetails";
 import Main from "./layouts/Main";
+import { quizDetailsLoader } from "./loader/quizDetailsLoader";
 import { quizListLoader } from "./loader/quizListLoader";
 
 function App() {
@@ -18,7 +19,9 @@ function App() {
         },
         {
           path: "/quiz/:id",
-          loader: quizListLoader,
+          loader: async ({ params }) => {
+            return await quizDetailsLoader(params.id);
+          },
           element: <QuizDetails></QuizDetails>,
         },
       ],
