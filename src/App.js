@@ -3,6 +3,7 @@ import "./App.css";
 import Home from "./components/Home/Home";
 import NotFound from "./components/NotFound/NotFound";
 import QuizDetails from "./components/QuizDetails/QuizDetails";
+import Statistics from "./components/Statistics/Statistics";
 import Main from "./layouts/Main";
 import { quizDetailsLoader } from "./loader/quizDetailsLoader";
 import { quizListLoader } from "./loader/quizListLoader";
@@ -17,6 +18,11 @@ function App() {
           path: "/",
           loader: quizListLoader,
           element: <Home></Home>,
+        },
+        {
+          path: "/statistics",
+          loader: quizListLoader,
+          element: <Statistics></Statistics>,
         },
         {
           path: "/quiz/:id",

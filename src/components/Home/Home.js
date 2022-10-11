@@ -5,7 +5,7 @@ import Quiz from "../Quiz/Quiz";
 
 const Home = () => {
   const { quizes } = useLoaderData();
-  console.log(quizes);
+
   return (
     <div>
       <Slider></Slider>

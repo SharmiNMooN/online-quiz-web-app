@@ -4,8 +4,8 @@ import "./Slider.css";
 
 const Slider = () => {
   return (
-    <div classNameName="container">
-      <div classNameName="slider">
+    <div className="">
+      <div className="slider">
         <div
           id="carouselExampleFade"
           className="carousel slide carousel-fade"
