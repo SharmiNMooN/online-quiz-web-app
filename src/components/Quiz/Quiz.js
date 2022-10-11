@@ -2,7 +2,7 @@ import React from "react";
 
 const Quiz = ({ quiz }) => {
   return (
-    <div className="card col-xs-12 col-sm-12 col-md-4 col-xl-3  mt-2  p-2">
+    <div className="card col-xs-12 col-sm-12 col-md-4 col-xl-3 bg-light mt-2  p-2">
       <div className="p-4">
         <img src={quiz.logo} className="card-img-top" alt="" />
         <div className="card-body">
