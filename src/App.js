@@ -1,6 +1,7 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./App.css";
 import Home from "./components/Home/Home";
+import NotFound from "./components/NotFound/NotFound";
 import QuizDetails from "./components/QuizDetails/QuizDetails";
 import Main from "./layouts/Main";
 import { quizDetailsLoader } from "./loader/quizDetailsLoader";
@@ -23,6 +24,10 @@ function App() {
             return await quizDetailsLoader(params.id);
           },
           element: <QuizDetails></QuizDetails>,
+        },
+        {
+          path: "*",
+          element: <NotFound></NotFound>,
         },
       ],
     },
