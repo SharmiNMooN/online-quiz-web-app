@@ -1,5 +1,6 @@
 import React from "react";
 import { useLoaderData, useParams } from "react-router-dom";
+import QuizQuestion from "../QuizQuestion/QuizQuestion";
 
 const QuizDetails = () => {
   const { id } = useParams();
@@ -10,11 +11,13 @@ const QuizDetails = () => {
       <div className="card text-center">
         <div className="card-header">QUIZ OF {quiz.name.toUpperCase()}</div>
         <div className="card-body">
-          <h5 className="card-title">Quiz details will be here</h5>
-          <p className="card-text">Quiz details</p>
-          <a href="#" className="btn btn-primary">
-            Go somewhere
-          </a>
+          {quiz.questions.map((item, index) => (
+            <QuizQuestion
+              key={item.id}
+              index={index}
+              quiz={item}
+            ></QuizQuestion>
+          ))}
         </div>
       </div>
     </div>
