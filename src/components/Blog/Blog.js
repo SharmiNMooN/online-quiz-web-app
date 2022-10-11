@@ -50,7 +50,7 @@ const Blog = () => {
       </div>
       <div className="card mb-3">
         <div className="card-header">
-          <b>Q:3. What is the purpose of use ref hook?</b>
+          <b>Q:3. What is the purpose of useRef hook?</b>
         </div>
         <div className="card-body">
           <h5 className="card-title">Ans:</h5>

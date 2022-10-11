@@ -5,7 +5,7 @@ import "./Header.css";
 
 const Header = () => {
   return (
-    <nav className="navbar navbar-expand-lg header px-5 navbar-light text-white">
+    <nav className="navbar navbar-expand-lg header  navbar-light text-white">
       <div className="container-fluid">
         <Link className="navbar-brand" to="/">
           <img src={logo} alt="" width="30" height="24" />

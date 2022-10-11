@@ -20,7 +20,7 @@ const Statistics = () => {
 
   return (
     <div className="d-flex justify-content-center">
-      <ResponsiveContainer width="40%" height="40%" aspect={1}>
+      <ResponsiveContainer width="50%" aspect={1}>
         <ComposedChart
           data={data}
           margin={{
