@@ -5,6 +5,7 @@ import { faEye } from "@fortawesome/free-solid-svg-icons";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import "./QuizQuestion.css";
+import { Link } from "react-router-dom";
 const QuizQuestion = ({ quiz, index }) => {
   const notify = (msg) => {
     toast(msg, {
@@ -18,7 +19,7 @@ const QuizQuestion = ({ quiz, index }) => {
     });
   };
   return (
-    <div className="card bg-success text-dark bg-gradient    text-center mt-2">
+    <div className="card bg-dark text-dark bg-gradient text-center mt-2">
       <div className="card-body">
         <ToastContainer
           position="top-center"
@@ -33,12 +34,12 @@ const QuizQuestion = ({ quiz, index }) => {
         />
         <div className="row">
           <div className="col-xs-12 col-sm-12 col-md-10 col-xl-10">
-            <h5 className="card-title text-white">
+            <h5 className="card-title text-warning">
               Quiz {index + 1}: {quiz.question}{" "}
             </h5>
           </div>
           <div className="col-xs-12 col-sm-12 col-md-1 col-xl-1">
-            <a
+            <Link
               className="btn btn-light"
               onClick={() =>
                 notify(`The correct answer is: ${quiz.correctAnswer}`)
@@ -48,7 +49,7 @@ const QuizQuestion = ({ quiz, index }) => {
                 className="text-danger"
                 icon={faEye}
               ></FontAwesomeIcon>
-            </a>
+            </Link>
           </div>
         </div>
         <div className="row gap-4 justify-content-center">
