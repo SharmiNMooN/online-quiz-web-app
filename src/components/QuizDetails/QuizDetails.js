@@ -9,7 +9,9 @@ const QuizDetails = () => {
   return (
     <div className="container">
       <div className="card text-center">
-        <div className="card-header">QUIZ OF {quiz.name.toUpperCase()}</div>
+        <div className="card-header text-dark">
+          <h5>QUIZ OF {quiz.name.toUpperCase()}</h5>
+        </div>
         <div className="card-body">
           {quiz.questions.map((item, index) => (
             <QuizQuestion

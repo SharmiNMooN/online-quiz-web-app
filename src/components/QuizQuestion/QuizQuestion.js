@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEye } from "@fortawesome/free-solid-svg-icons";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import "./QuizQuestion.css";
 const QuizQuestion = ({ quiz, index }) => {
   const notify = (msg) => {
     toast(msg, {
@@ -17,7 +18,7 @@ const QuizQuestion = ({ quiz, index }) => {
     });
   };
   return (
-    <div className="card text-center mt-2">
+    <div className="card bg-success text-dark bg-gradient    text-center mt-2">
       <div className="card-body">
         <ToastContainer
           position="top-center"
@@ -32,13 +33,13 @@ const QuizQuestion = ({ quiz, index }) => {
         />
         <div className="row">
           <div className="col-xs-12 col-sm-12 col-md-10 col-xl-10">
-            <h5 className="card-title text-info">
+            <h5 className="card-title text-white">
               Quiz {index + 1}: {quiz.question}{" "}
             </h5>
           </div>
           <div className="col-xs-12 col-sm-12 col-md-1 col-xl-1">
             <a
-              className="btn btn-info"
+              className="btn btn-light"
               onClick={() =>
                 notify(`The correct answer is: ${quiz.correctAnswer}`)
               }
