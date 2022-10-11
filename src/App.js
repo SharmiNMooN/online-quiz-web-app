@@ -1,5 +1,6 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./App.css";
+import Blog from "./components/Blog/Blog";
 import Home from "./components/Home/Home";
 import NotFound from "./components/NotFound/NotFound";
 import QuizDetails from "./components/QuizDetails/QuizDetails";
@@ -30,6 +31,10 @@ function App() {
             return await quizDetailsLoader(params.id);
           },
           element: <QuizDetails></QuizDetails>,
+        },
+        {
+          path: "/blog",
+          element: <Blog></Blog>,
         },
         {
           path: "*",
