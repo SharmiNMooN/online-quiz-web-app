@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Quiz = ({ quiz }) => {
   return (
@@ -12,7 +13,7 @@ const Quiz = ({ quiz }) => {
         </div>
         <div className="card-footer bg-transparent  border-0">
           <a className="btn w-100 btn align-self-end btn-info">
-            Start Practice
+            <Link to={"/quiz/" + quiz.id}> Start Practice</Link>
           </a>
         </div>
       </div>

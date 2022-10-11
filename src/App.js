@@ -1,6 +1,7 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./App.css";
 import Home from "./components/Home/Home";
+import QuizDetails from "./components/QuizDetails/QuizDetails";
 import Main from "./layouts/Main";
 import { quizListLoader } from "./loader/quizListLoader";
 
@@ -14,6 +15,11 @@ function App() {
           path: "/",
           loader: quizListLoader,
           element: <Home></Home>,
+        },
+        {
+          path: "/quiz/:id",
+          loader: quizListLoader,
+          element: <QuizDetails></QuizDetails>,
         },
       ],
     },
