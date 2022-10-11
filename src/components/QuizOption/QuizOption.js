@@ -15,7 +15,6 @@ const QuizOption = ({ question, correctAnswer }) => {
     });
   };
   const handleChange = (event) => {
-    // console.log(event.target.value);
     const selectedValue = event.target.value;
     if (selectedValue === correctAnswer) {
       console.log("Correct answer");
