@@ -25,7 +25,7 @@ const QuizOption = ({ question, correctAnswer }) => {
     }
   };
   return (
-    <div className="border border-warning rounded d-flex align-items-center col-xs-12 col-sm-12 col-md-2 col-xl-4 bg-light">
+    <div className="border border-warning rounded d-flex align-items-center col-xs-12 col-sm-12 col-md-4 col-xl-4 bg-light">
       <ToastContainer
         position="top-center"
         autoClose={5000}
